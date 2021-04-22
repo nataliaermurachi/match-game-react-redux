@@ -1,0 +1,36 @@
+import React from 'react';
+import { Score } from './features/score/Score.js';
+import { Board } from './features/board/Board.js';
+// Add import statements below
+
+
+
+export function App () {
+  // Add dispatch variable below
+  
+
+  const startGameHandler = () => {
+    // Add action dispatch below
+    
+  };
+
+  const tryAgainHandler = () => {
+    // Add action dispatch below
+    
+  };
+
+  return (
+    <div className="App">
+      <Score />
+      <Board />
+      <footer className="footer">
+        <button onClick={startGameHandler} className="start-button">
+          Start Game
+        </button>
+        <button onClick={tryAgainHandler} className="try-new-pair-button">
+          Try New Pair
+        </button>
+      </footer>
+    </div>
+  );
+};
